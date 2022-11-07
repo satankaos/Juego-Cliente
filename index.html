@@ -1,18 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,400,600,900">
-    <title>Pasapalabra</title>
+	<link rel="icon" type="image/x-icon" href="media/3878_rosco-pasapalabra-poner-fotos-Montserrat-Tena-Dávila-removebg-preview.png">
+	
+    <title>PASAPALABRA</title>
 </head>
 <body>
-	<audio autoplay controls>
-		<source src="./media/Pasapalabra-_Música-Rosco_-_-1-Hora.mp3" type="audio/MPEG">
+	<div class="repro">
+		<audio autoplay controls>
+		<source src="media/Pasapalabra-_Música-Rosco_-_-1-Hora.mp3" type="audio/MPEG">
 	</audio>
+</div>
+	
 	<section class="game">
+		
 		<div class="circle-container">
 			<div class="title-container">
 				<p class="title">PASAPALABRA JS</p>
@@ -45,18 +51,18 @@
 		        <li class="item">Z</li>
 		    </ul>
 			<ul class="scoreboard">
-				<li id="js--timer" class="timer" href="">150</li>
-				<li id="js--score" class="score" href="">25</li>
+				<li id="js--timer" class="timer" href="">200</li>
+				
 			</ul>
 		</div>
 		<div class="controls-container">
-			<i id="js--close" class="icon-close hidden"></i>
+			<img id="js--close" class="icon-close hidden" src="media/kisspng-red-x-x-mark-computer-icons-clip-art-red-x-png-5ab191060b46d7.3400347915215864380462-removebg-preview.png"></img>
 			<div id="js--ng-controls" class="ng-controls">
 				<h4>Bienvenidos al juego de Pasapalabra </h4>
 				<p>Basado en el exitoso concurso de televisión Pasapalabra de Telecinco, las normas son muy sencillas:</p>
 				<p>Se mostraran unas definiciones por pantalla y el usuario deberá responder con la palabra a la que corresponden. El usuario tiene la opción de decir Pasapalabra y dejar esa definición para mas adelante.</p>
 				<p>El programa es sensible a las acentuación, asi que se debe introducir la palabra sin tilde. Es posible utilizar la tecla ENTER para enviar la palabra y el SPACE para hacer pasapalabra.</p>
-				<a id="js--new-game" class="btn"><i class="icon-play"></i>Jugar</a>
+				<a id="js--new-game" class="btn"><img class="icon-play" src="media/kisspng-scalable-vector-graphics-check-mark-clip-art-green-tick-transparent-png-5a756eedaab886.2064827915176455496993-removebg-preview.png"></img>Jugar</a>
 			</div>
 			<div id="js--question-controls" class="question-controls hidden">
 				<span id="js--hint" class="hint"></span>
@@ -70,12 +76,13 @@
 			<div id="js--pa-controls" class="pa-controls hidden">
 				<p id="js--end-title" class="title"></p>
 				<p id="js--end-subtitle" class="subtitle"></p>
-				<a id="js--pa" class="btn" href=""><i class="icon-loop"></i>Jugar de nuevo</a>
+				<a id="js--pa" class="btn" ><img class="icon-loop"src="media/kisspng-scalable-vector-graphics-check-mark-clip-art-green-tick-transparent-png-5a756eedaab886.2064827915176455496993-removebg-preview.png"></img>Jugar de nuevo</a>
 			</div>
 		</div>
 	</section>
-	<footer>
-		
+
+	
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="js/app.js"></script>
 </body>

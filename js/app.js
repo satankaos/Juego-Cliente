@@ -46,8 +46,8 @@ function VerDefinicion(pos) {
 	$("#js--definition").html(palabras[pos].definition);
 }
 
-var puntos = 25;
-
+var cont = 25;
+// Se comprueba la respuesta
 function checkRespuesta(pos) {
 	var userAnswer = $("#js--user-answer").val().toLowerCase();
 	if (userAnswer == palabras[pos].palabra.toLowerCase()) {
@@ -58,8 +58,8 @@ function checkRespuesta(pos) {
 		palabras[pos].correct = false;
 		$(".circle .item").eq(palabras[pos].idNumber).addClass("item--failure");
 	}
-	puntos--;
-	$("js--score").html(puntos);
+
+	
 
 	return count++;
 }
@@ -85,7 +85,7 @@ var temp;
 function contador() {
 	seconds = $("#js--timer").html();
 	seconds = parseInt(seconds, 10);
-	if (seconds == 1) {
+	if (seconds == 0) {
 		temp = $("#js--timer");
 		temp.innerHTML = 0;
 		endGame();
@@ -134,7 +134,7 @@ $("#js--send").click(function() {
 	checkRespuesta(count);
 	continuajugando();
 });
-
+//control 
 $("#js--question-controls").keypress(function(event) {
 	var keycode = (event.keyCode ? event.keyCode : event.which);
 	if (keycode == "13") {
