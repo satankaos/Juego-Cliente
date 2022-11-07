@@ -263,13 +263,11 @@ textarea {
   font-size: 0.9rem;
   margin-right: 10px;
 }
- audio {
+ /*audio {
   width:150px;
   height:150px;
-  margin: 0% ;
-  padding:0%;
-  
-}
+position: absolute;
+}*/
 .icon-heart:before {
   content: "\e9da";
 }
@@ -605,7 +603,9 @@ body {
     display: block;
   }
 }
-
+.reprox{
+  background-color:none;
+}
 
 /* Controls
  * ----------------------------------------------------------------------------- */
