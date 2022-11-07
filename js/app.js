@@ -165,4 +165,5 @@ $("#js--pa").click(function() {
 // termina el juego
 $("#js--close").click(function() {
 	endGame();
+	document.getElementById('js--timer').innerHTML = 0;
 });
